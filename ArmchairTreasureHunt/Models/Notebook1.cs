@@ -8,11 +8,15 @@ namespace ArmchairTreasureHunt.Models
 
 		[Key]
 		public int Id { get; set; }
-        [Display(Name = "Exercise name")]
-        [Required(ErrorMessage="Guess country!")]
-		public string? Country { get; set; }
-		[Required(ErrorMessage = "Guess password!")]
-		public string? Password1 { get; set; } 
+
+        [RegularExpression(@"^[a-zA-Z\s]*$")]
+        [Required]
+        [StringLength(20, ErrorMessage = "20 characters maximum")]
+        public string? Country { get; set; }
+        [RegularExpression(@"^[a-zA-Z]*$")]
+        [Required]
+        [StringLength(20, ErrorMessage = "20 characters maximum")]
+        public string? Password1 { get; set; } 
 
 		public string? UserId { get; set; } 
 

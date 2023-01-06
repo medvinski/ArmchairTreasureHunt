@@ -7,7 +7,19 @@
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<script type="text/javascript">
 
-		swal('@TempData["success"]',"Go to next notebook", "success");
+		swal('@TempData["success"]',"Go to next Notebook", "success");
+
+	</script>
+
+}
+@if (TempData["treasure"] != null)
+{
+
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script type="text/javascript">
+
+		swal('@TempData["treasure"]', "Congratulations - you won!", "success");
 
 	</script>
 
@@ -22,14 +34,14 @@
 	
 		<script type="text/javascript">
 
-		swal('@TempData["error"]', "", "error");
+		swal('@TempData["error"]', "Try again", "error");
 
 		</script>
 	
 
 }
 
-@if (TempData["exists1"] != null)
+@if (TempData["exists"] != null)
 {
 
 	<script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -38,13 +50,14 @@
 
 	<script type="text/javascript">
 
-		swal('@TempData["exists1"]', "Go to next notebook", "warning");
+		swal('@TempData["exists"]', "Go to next Notebook", "warning");
 
 	</script>
 
 
 }
-@if (TempData["exists2"] != null)
+
+@if (TempData["treasure1"] != null)
 {
 
 	<script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -53,13 +66,14 @@
 
 	<script type="text/javascript">
 
-		swal('@TempData["exists2"]', "Go to next notebook", "warning");
+		swal('@TempData["treasure1"]', "You found it already!", "warning");
 
 	</script>
 
 
 }
-@if (TempData["n2_noaccess"] != null)
+
+@if (TempData["noaccess"] != null)
 {
 
 	<script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -68,7 +82,7 @@
 
 	<script type="text/javascript">
 
-		swal('@TempData["n2_noaccess"]', "", "error");
+		swal('@TempData["noaccess"]', "Get Key I in Notebook I and Key II in Notebook II", "error");
 
 	</script>
 
