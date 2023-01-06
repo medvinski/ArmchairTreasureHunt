@@ -1,0 +1,76 @@
+﻿@model Notebook2
+@{
+	ViewData["Title"] = "Second Key";
+}
+
+
+<div class="text-center">
+	<h1 class="display-4">@ViewData["Title"]<img src="~/images/key1.png" alt="Placeholder" /></h1>
+	<img src="~/images/notebook2v2.jpg" alt="Placeholder" />
+	<p>Future space explorations, might be like sailing of the past...into the unknown too...</p><br />
+
+
+	<div class="row">
+		<div class="col-6"></div>
+
+		<div class="card">
+
+
+			<div class="card-header">
+				<h1>???</h1>
+			</div>
+			<div class="card-body">
+				<form asp-controller="Game" asp-action="CheckNotebook2" method="post">
+
+					<div>
+						<label class="form-label">Planet</label>
+						<input asp-for="Planet" type="text" />
+					</div>
+					<div>
+						<label class="form-label">Password</label>
+						<input asp-for="Password2" type="text" />
+					</div>
+					<div><button class="btn btn-outline-warning">Check answers</button></div>
+				</form>
+			</div>
+			<div class="accordion" id="accordionExample">
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingOne">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+							<h3>Tip #1</h3>
+						</button>
+					</h2>
+					<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
+						<div class="accordion-body">
+							Planet: 1st part of the name of a planet discovered recently to be in the habitable zone.<br />
+							Password: 2nd part of planet's name, number(s) and letter(s).
+							<br />
+
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingTwo">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							<h3>Tip #2</h3> &nbsp;&nbsp; Reveal if still lost after tip #1
+						</button>
+					</h2>
+					<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" style="">
+						<div class="accordion-body">
+							Near-Earth-sized exoplanet, discovered in 2020<br />
+							Binary number in the notebook.
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="class-footer">
+
+		<br />
+		<button type="button" class="btn btn-outline-dark" onclick="location.href='@Url.Action("Index", "Game")'">BACK</button>
+	</div>
+</div>
+<div class="class-footer">
+</div>

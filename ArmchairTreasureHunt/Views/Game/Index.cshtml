@@ -1,0 +1,15 @@
+﻿@model Notebook1
+@{
+	ViewData["Title"] = "Game";
+}
+
+<div class="text-center">
+	<h1 class="display-4">@ViewData["Title"]</h1>
+	<hr />
+	
+	<button type="button" class="btn btn-primary btn-lg" onclick="location.href='@Url.Action("Notebook1", "Game")'">Notebook I</button>
+	<button type="button" class="btn btn-primary btn-lg" onclick="location.href='@Url.Action("Notebook2", "Game")'">Notebook II</button>
+	<button type="button" class="btn btn-primary btn-lg" onclick="location.href='@Url.Action("CheckKeys", "Game")'">Notebook III</button><br /><br />
+	<button type="button" class="btn btn-outline-primary" onclick="location.href='@Url.Action("Index", "Home")'">BACK TO HOME</button><br />
+	<hr />
+</div>
