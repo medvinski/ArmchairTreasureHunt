@@ -13,6 +13,7 @@ Przykładowe konto testowe (rekomenduję stworzyć nowe – własne do testowani
 Email: testowewsb@gmail.com
 Hasło: Testowe1wsb@
 
-(Tylko pierwsza osoba uzywajaca testowego konta będzie ogdadywac jako pierwsza, wiec tylko ona dostanie komunikat zgadniecia po raz pierwszy,
-reszta bedzie miala komunikat "powtórne zgadnięcie" dlatego rekomenduje utworzenie nowych kont.)
+(Tylko pierwsza osoba uzywajaca testowego konta będzie odgadywać pierwsza, wiec tylko ona dostanie komunikat zgadniecia po raz pierwszy,
+reszta bedzie miala komunikat "powtórne zgadnięcie" dlatego rekomenduje utworzenie nowych kont for full experience :))
+
 
